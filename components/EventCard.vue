@@ -1,6 +1,6 @@
 
 <template>
-  <nuxt-link :to="'/event/' + event.id">
+  <nuxt-link :to="'/events/' + event.id">
     <div class="-shadow">
       <span class="eyebrow">
         @{{ event.time }} on {{ parsedDate }}
@@ -20,7 +20,6 @@ export default {
     event: Object
   },
   created(){
-      console.log(this.event);
   },
   computed: {
     parsedDate() {
